@@ -1,0 +1,13 @@
+<h1>Notícias</h1>
+<?php
+foreach ($this->noticias->channel->item as $noticia){
+    ?>    
+    <a href="<?php echo $noticia->link?>" target="_blank">
+        <div class="noticia">
+            <h2><?php echo $noticia->title?></h2>
+            <p><?php echo $noticia->description?></p>
+        </div>
+    </a>
+    <hr/>
+    <?php
+}
